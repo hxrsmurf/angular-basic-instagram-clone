@@ -2,8 +2,13 @@
   <app-navigation></app-navigation>
   <app-profile-header></app-profile-header>
   <app-posts></app-posts>
-
-  <div class="container"><img [src]="profileUrl | async" with="293px" height="293px"/></div>
+  <div class="container">
+    <div class="row">
+        <div class="col md-3" style="margin-bottom: 28px">
+          <img [src]="profileUrl | async" with="293px" height="293px"/>
+        </div>
+    </div>
+</div>
 
 </body>
 <router-outlet></router-outlet>
